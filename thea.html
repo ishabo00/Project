@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Reviews</title>
+    <link rel="stylesheet" href="thea.css">
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar">
+    <h1>Food Reviews</h1>
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Reviews</a></li>
+        <li><a href="#" onclick="openForm()">Add Review</a></li>
+        <li><a href="#" onclick="openLogin()">Login</a></li>
+        <li><a href="video.html" class="video-btn">Post Video</a></li>
+        <li><a href="achievement.html" class="achievement-btn">Achievement</a></li>
+    </ul>
+</nav>
+
+<!-- Hero Section -->
+<header class="hero">
+    <h2>Find the Best Food in Town!</h2>
+    <p>Honest reviews from real food lovers.</p>
+</header>
+
+<!-- Reviews Section -->
+<div class="reviews">
+    <div class="review-card">
+        <img src="burgerrr.jpg" alt="Delicious Burger">
+        <h3>Cheesy Burger</h3>
+        <p>"One of the best burgers I've had! Juicy, flavorful, and perfectly cooked."</p>
+        <span>⭐️⭐️⭐️⭐️⭐️</span>
+    </div>
+
+    <div class="review-card">
+        <img src="pizza.jpg" alt="Tasty Pizza">
+        <h3>JayCass Pizza</h3>
+        <p>"Classic taste with fresh ingredients. Loved the crispy crust!"</p>
+        <span>⭐️⭐️⭐️⭐⭐</span>
+    </div>
+
+    <div class="review-card">
+        <img src="sushi.jpg" alt="Fresh Sushi">
+        <h3>Salmon Sushi</h3>
+        <p>"So fresh and delicious! The wasabi added a perfect kick."</p>
+        <span>⭐️⭐️⭐️⭐️⭐️</span>
+    </div>
+
+    <div class="review-card">
+        <img src="takoyaki.jpg" alt="Takoyaki">
+        <h3>Takoyaki</h3>
+        <p>"Creamy and rich flavor. Loved the fillings."</p>
+        <span>⭐️⭐️⭐️⭐️☆</span>
+    </div>
+
+    <div class="review-card">
+        <img src="icecream.jpg" alt="Ice Cream">
+        <h3>Chocolate Ice Cream</h3>
+        <p>"Rich and creamy! Perfect balance of sweetness and chocolate."</p>
+        <span>⭐️⭐️⭐️⭐️⭐️</span>
+    </div>
+</div>
+
+<!-- Review Form Popup -->
+<div class="popup" id="reviewForm">
+    <div class="popup-content">
+        <span class="close" onclick="closeForm()">&times;</span>
+        <h2>Add Your Review</h2>
+        <input type="text" id="foodName" placeholder="Food Name">
+        <textarea id="reviewText" placeholder="Write your review..."></textarea>
+        <button onclick="submitReview()">Submit</button>
+    </div>
+</div>
+
+<!-- Login Form Popup -->
+<div class="popup" id="loginForm">
+    <div class="popup-content">
+        <span class="close" onclick="closeLogin()">&times;</span>
+        <h2>Login</h2>
+        <input type="text" placeholder="Username">
+        <input type="password" placeholder="Password">
+        <button>Login</button>
+    </div>
+</div>
+
+<script src="thea.js"></script>
+
+</body>
+</html>
